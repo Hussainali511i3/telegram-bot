@@ -6,7 +6,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
 # ====== الإعدادات ======
-BOT_TOKEN = "8210441829:AAFuGLsFIvEW3qShld_ZkHC8i7MLVW7LnKw"
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 ADMINS = [5638954248, 7853380905]
 CHANNEL_LINK = "https://t.me/yourchannel"
 DATA_FILE = "users.json"
@@ -113,4 +113,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
